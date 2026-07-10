@@ -5,7 +5,7 @@ const API_URL = import.meta.env.DEV
 
 async function callERNIE(messages, jsonMode = false) {
   const body = {
-    model: 'ernie-3.5-8k',
+    model: 'ernie-4.5-turbo-128k',
     messages,
     ...(jsonMode ? { response_format: { type: 'json_object' } } : {}),
   };
